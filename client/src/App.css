@@ -1,0 +1,297 @@
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+header h1 {
+  margin: 0 0 1rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+header nav {
+  display: flex;
+  gap: 0.5rem;
+}
+
+header nav button {
+  padding: 0.55rem 1.1rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #1d1d1f;
+}
+
+header nav button.active {
+  background: #1d1d1f;
+  color: #fff;
+  border-color: #1d1d1f;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.loading {
+  color: #888;
+}
+
+.error {
+  color: #d33;
+  background: #fef0f0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #f5c6c6;
+  word-break: break-all;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  padding: 2rem;
+}
+
+.positive {
+  color: #2a9d5c;
+}
+
+.negative {
+  color: #d33;
+}
+
+.neutral {
+  color: #888;
+}
+
+/* ---- Dashboard ---- */
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.total {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #eee;
+}
+
+.total-label {
+  color: #888;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.total-value {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.summary-card {
+  background: #fff;
+  padding: 1.2rem 1.3rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.summary-label {
+  color: #888;
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.summary-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.summary-value.positive {
+  color: #2a9d5c;
+}
+
+.summary-value.negative {
+  color: #d33;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.refresh-btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  background: #1d1d1f;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.refresh-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.refresh-meta {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.status-message {
+  padding: 0.55rem 0.9rem;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  align-self: flex-start;
+  border: 1px solid transparent;
+}
+
+.status-message.loading {
+  background: #eef4ff;
+  color: #2f62a8;
+  border-color: #cfe0f8;
+}
+
+.status-message.done {
+  background: #eaf7ee;
+  color: #226e3f;
+  border-color: #c6e6d1;
+}
+
+/* ---- Cards ---- */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card-form {
+  background: #fff;
+  padding: 1.3rem 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+
+.card-form h2 {
+  margin: 0 0 0.9rem;
+  font-size: 1.05rem;
+}
+
+.card-form form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.6rem;
+}
+
+.card-form input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.card-form button {
+  padding: 0.6rem 1rem;
+  border: none;
+  background: #1d1d1f;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.card-form button:disabled {
+  opacity: 0.5;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 0.7rem 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card-item {
+  background: #fff;
+  padding: 1.2rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.card-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.card-name {
+  font-weight: 600;
+}
+
+.card-code {
+  color: #888;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.card-item-body {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem 0.8rem;
+}
+
+.field-label {
+  color: #888;
+  font-size: 0.8rem;
+  margin-bottom: 0.15rem;
+}
+
+.delete-btn {
+  align-self: flex-end;
+  padding: 0.3rem 0.8rem;
+  background: transparent;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.delete-btn:hover {
+  color: #d33;
+  border-color: #d33;
+}
